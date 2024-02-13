@@ -27,6 +27,5 @@ jobs:
               with:
                 node-version: ${{ matrix.node-version }}
             - run: npm i
-            - run: "C:/Program Files/MongoDB/Server/7.0/bin/mongod.exe --dbpath=./data/db"
             - run: npm run dev
             - run: npm test
